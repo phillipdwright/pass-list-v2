@@ -1,0 +1,87 @@
+.container {
+  padding-top: 40px;
+}
+
+footer {
+  font-size: 12px;
+}
+
+.navbar-brand i {
+  margin-right: 10px;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-brand i:hover {
+  background: #777;
+}
+
+.navbar-brand .brand,
+.navbar-brand .brand:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg-light {
+  background: #e6eaf1 !important;
+}
+
+.page-link, .page-link:hover {
+  color: #545b62;
+}
+
+.page-item.active .page-link {
+  background: #545b62 !important;
+  color: #FFF !important;
+  border-color: #545b62;
+}
+
+h6.card-title {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.badge-light {
+  font-weight: normal;
+  background: #e2e2e2;
+}
+
+.card {
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.scrolling-ddl-body {
+  max-height: 500px; 
+  width: 100%;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.results-container .results-card {
+  width: 30%;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .results-container .results-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .results-container .results-card {
+    width: 90%;
+  }
+}
