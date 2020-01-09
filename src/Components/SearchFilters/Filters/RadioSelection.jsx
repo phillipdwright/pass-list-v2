@@ -2,7 +2,7 @@ import React from "react";
 import { DropdownMenu } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
-export default ({ data, savedValue, onSelection, toggle }) => {
+export default ({ data, savedValue, onSelection, toggle, setParentTitle }) => {
   let isChecked = value => {
     return value === savedValue;
   };
@@ -31,6 +31,7 @@ export default ({ data, savedValue, onSelection, toggle }) => {
       <div style={{ paddingTop: 10, paddingLeft: 10 }}>
         <NavLink
           onClick={() => {
+            setParentTitle("title changed");
             onSelection("");
             toggle();
           }}

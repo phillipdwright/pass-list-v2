@@ -89,6 +89,16 @@ class SearchProvider extends Component {
     });
   };
 
+  updateSort = value => {
+    console.log(`Updating Sort - ${value} ...`);
+    var req = this.state.requestBody;
+    req.sort = value;
+    console.log(req);
+    this.setState({ requestBody: req }, () => {
+      this.getResults();
+    });
+  };
+
   getResults = _ => {
     var url = func.getResultsUrl(
       "https://passlist-offeringresults-cus-qa.azurewebsites.net"
@@ -132,6 +142,7 @@ class SearchProvider extends Component {
           updateResults: this.updateResults,
           updateFilter: this.updateFilter,
           resetFilters: this.resetFilters,
+          updateSort: this.updateSort,
           sortResults: this.sortResults,
           setPage: this.setPage,
           nextPage: this.nextPage,
